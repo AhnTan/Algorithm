@@ -9,7 +9,7 @@ public class Solution {
 	BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 	
 	int min, max, min_index, max_index;
-	int case_size = 10;
+	int case_size = 3;
 	int dump_size;
 	int array[];
 	
@@ -45,8 +45,16 @@ public class Solution {
 				array[i]=Integer.parseInt(s[i]);				
 			}
 			
+			Arrays.sort(array);
+			max = array[array.length-1];
+			min = array[0];
+			
 			for(int j=0; j<dump_size; j++) {
+				
+				if(array[0] == (max+min)/2)
+					break;
 				calc();
+				
 			}
 			
 			Arrays.sort(array);
@@ -58,11 +66,10 @@ public class Solution {
 	
 	public void calc() {
 		
-		Arrays.sort(array);
-		
 		array[0]++;
 		array[array.length-1]--;
 		
+		Arrays.sort(array);
 		
 	}
 }

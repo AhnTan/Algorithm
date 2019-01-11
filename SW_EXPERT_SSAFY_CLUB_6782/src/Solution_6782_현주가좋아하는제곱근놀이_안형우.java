@@ -3,7 +3,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class Solution {
+public class Solution_6782_현주가좋아하는제곱근놀이_안형우 {
 
 	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 	BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -12,10 +12,10 @@ public class Solution {
 	long init_num;
 	
 	public static void main(String[] args) {
-		new Solution();
+		new Solution_6782_현주가좋아하는제곱근놀이_안형우();
 	}
 	
-	public Solution() {
+	public Solution_6782_현주가좋아하는제곱근놀이_안형우() {
 		init();
 	}
 	
@@ -53,7 +53,8 @@ public class Solution {
 				
 				count += (n - num);
 				calc(n);
-				
+				//count++;
+				//calc(num + 1);
 				
 			} else {
 				count++;
